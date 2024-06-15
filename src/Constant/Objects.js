@@ -15,6 +15,13 @@ import { FaRegSmile } from "react-icons/fa";
 import { MdProductionQuantityLimits } from "react-icons/md";
 import { IoBagCheckOutline } from "react-icons/io5";
 import { FaMobileAlt, FaLaptop, FaTabletAlt, FaCamera, FaHeadphones, FaTv, FaWatch, FaGamepad, FaKeyboard, FaMouse, FaPrint, FaLightbulb } from 'react-icons/fa';
+import { IoCheckmarkCircleOutline } from "react-icons/io5";
+import { IoCloseCircleOutline } from "react-icons/io5";
+import { IoAccessibilitySharp } from "react-icons/io5";
+import { FaPaypal } from "react-icons/fa";
+import { LiaCcVisa } from "react-icons/lia";
+import { FaCcMastercard } from "react-icons/fa";
+import { SiAmericanexpress } from "react-icons/si";
 
 
 
@@ -157,3 +164,132 @@ export const items = [
     { title: 'Lightbulb', icon: <CiViewTable /> ,color:'#3688FA'},
 ];
 
+export const orderData = [
+    {
+        Customer: "Alice Smith",
+        url:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.psychologytoday.com%2Fintl%2Fblog%2Fliving-single%2F201608%2Fevery-stereotype-single-people-debunked-science&psig=AOvVaw1BfGIhrsAthQiPfk4gKpvY&ust=1718519215028000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMiE6q3-3IYDFQAAAAAdAAAAABAE',
+        Product: "Laptop",
+        UserID: "alice123",
+        OrderedPlaced: "2024-06-14",
+        Amount: 1299.99,
+        PaymentStatus: "Paid",
+        OrderStatus: "Shipped",
+       icon: <IoCheckmarkCircleOutline />,
+        colourKey: "#00cc66"
+    },
+    {
+        Customer: "Bob Johnson",
+        url:'https://www.google.com/imgres?q=images%20single%20people&imgurl=https%3A%2F%2Fcdn2.psychologytoday.com%2Fassets%2Fstyles%2Fmanual_crop_1_91_1_1528x800%2Fpublic%2Ffield_blog_entry_images%2F2017-09%2Fshutterstock_533152165.jpg%3Fitok%3Dk2T_GUT6&imgrefurl=https%3A%2F%2Fwww.psychologytoday.com%2Fus%2Fblog%2Fliving-single%2F201708%2Fthe-emotional-life-single-people&docid=AwgkwGQDd-U1LM&tbnid=fOxwKc18yQgJsM&vet=12ahUKEwjYxLSL_dyGAxWySGwGHWZSAYkQM3oECBoQAA..i&w=1528&h=800&hcb=2&ved=2ahUKEwjYxLSL_dyGAxWySGwGHWZSAYkQM3oECBoQAA',
+        Product: "Headphones",
+        UserID: "bob456",
+        OrderedPlaced: "2024-06-15",
+        Amount: 99.99,
+        PaymentStatus: "Pending",
+        OrderStatus: "Processing",
+        icon: <IoAccessibilitySharp />,
+        colourKey: "#ff9933"
+    },
+    {
+        Customer: "Eve Williams",
+        url:'https://www.google.com/imgres?q=images%20single%20people&imgurl=https%3A%2F%2Fcdn2.psychologytoday.com%2Fassets%2Fstyles%2Fmanual_crop_1_91_1_1528x800%2Fpublic%2Ffield_blog_entry_images%2F2017-09%2Fshutterstock_533152165.jpg%3Fitok%3Dk2T_GUT6&imgrefurl=https%3A%2F%2Fwww.psychologytoday.com%2Fus%2Fblog%2Fliving-single%2F201708%2Fthe-emotional-life-single-people&docid=AwgkwGQDd-U1LM&tbnid=fOxwKc18yQgJsM&vet=12ahUKEwjYxLSL_dyGAxWySGwGHWZSAYkQM3oECBoQAA..i&w=1528&h=800&hcb=2&ved=2ahUKEwjYxLSL_dyGAxWySGwGHWZSAYkQM3oECBoQAA',
+        Product: "Smartwatch",
+        UserID: "eve789",
+        OrderedPlaced: "2024-06-14",
+        Amount: 199.99,
+        PaymentStatus: "Failed",
+        icon: <IoCloseCircleOutline />,
+        OrderStatus: "Failed",
+        colourKey: "#3366ff"
+    }
+];
+
+
+
+
+
+
+
+export const paymentDetails = [
+    {
+        title: "Visa Card",
+        icon:<LiaCcVisa />,
+        color:'#F87957',
+        details: {
+            laptopOrdered: "MacBook Pro",
+            id: "visa123",
+            amount: 2399.99
+        }
+    },
+    {
+        title: "PayPal",
+        icon:<FaPaypal />,
+        color:'#FFAE1F',
+        details: {
+            laptopOrdered: "Dell XPS 13",
+            id: "paypal456",
+            amount: 1499.99
+        }
+    },
+    {
+        title: "MasterCard",
+        icon:<FaCcMastercard />,
+        color:'#00CC66',
+        details: {
+            laptopOrdered: "HP Spectre x360",
+            id: "master789",
+            amount: 1799.99
+        }
+
+    },
+    {
+        title: "American Express",
+        icon:<SiAmericanexpress />,
+        color:'#F87957',
+        details: {
+            laptopOrdered: "Lenovo ThinkPad ",
+            id: "amex012",
+            amount: 1999.99
+        }
+    },
+    {
+        title: "Visa Card",
+        icon:<LiaCcVisa />,
+        color:'#F87957',
+        details: {
+            laptopOrdered: "MacBook Pro",
+            id: "visa123",
+            amount: 2399.99
+        }
+    },
+    {
+        title: "PayPal",
+        icon:<FaPaypal />,
+        color:'#00CC66',
+        details: {
+            laptopOrdered: "Dell XPS 13",
+            id: "paypal456",
+            amount: 1499.99
+        }
+    },
+    {
+        title: "MasterCard",
+        icon:<FaCcMastercard />,
+        color:'#3688FA',
+        details: {
+            laptopOrdered: "HP Spectre x360",
+            id: "master789",
+            amount: 1799.99
+        }
+
+    },
+    {
+        title: "American Express",
+        icon:<SiAmericanexpress />,
+        color:'#F87957',
+        details: {
+            laptopOrdered: "Lenovo ThinkPad ",
+            id: "amex012",
+            amount: 1999.99
+        }
+    }
+];

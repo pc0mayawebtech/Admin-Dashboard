@@ -1,0 +1,38 @@
+.TransactionAndNotification-container{
+    height: 500px;
+    width:82vw;
+    margin-top: -50px;
+    /* background-color:black; */
+    margin-left: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px)
+{
+    .TransactionAndNotification-container{
+        height: 1000px;
+        width:96vw;
+        /* background-color:black; */
+        margin-left: -100px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 468px)
+{
+    .TransactionAndNotification-container{
+        height: 700px;
+        width:96vw;
+        margin-left: -50px;
+        /* background-color:black; */
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
