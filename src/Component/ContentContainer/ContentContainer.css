@@ -1,0 +1,11 @@
+.content-container{
+    width:83vw;
+    height:100vh;
+    /* background-color: aquamarine; */
+    position: absolute;
+    left:15vw;
+    top: 16vh;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}

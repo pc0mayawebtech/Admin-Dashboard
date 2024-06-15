@@ -1,0 +1,230 @@
+.sidebar-container{
+    height:100vh;
+    width:14vw;
+    background-color:#ffffff;
+    margin-left: 12px;
+}
+
+.ariseLogo-container{
+    width:100%;
+    height:14vh;
+    /* display: grid;
+    place-content: center; */
+    background-color: #ffffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ariseLogo-div{
+    width:60%;
+    height:10vh;
+    /* background-color: #ffffff; */
+}
+
+.sidebar-card-cont{
+    width:100%;
+    height:7%;
+    background-color: #ffffff;
+    /* border: 2px solid red; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-card-cont:hover{
+    width:100%;
+    height:7%;
+    /* background-color: #747171; */
+    /* border: 2px solid red; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3F8DFA;
+}
+
+
+.sidebar-card-cont-logo{
+ height: 35px;
+ width:35px;
+ margin-left: 1rem;
+ font-size: 1rem;
+ font-weight: bold;
+ background-color: #F8F8FB;
+ display: grid;
+ place-content: center;
+ border-radius: 8px;
+}
+
+.sidebar-card-cont-title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: start;
+    font-size: 15px;
+    margin:6px;
+    /* background-color: aqua; */
+}
+
+.sidebar-card-cont-upDown{
+  margin-right: 1rem;
+  font-size: 0.8rem;
+}
+
+
+.sidebar-subData-card-cont{
+    background-color: #c6daf5;
+    width:100%;
+    height:7%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+@media ( min-width:768px ) and ( max-width:1000px )
+{ 
+    .sidebar-container{
+        height:100vh;
+        width:50vw;
+        background-color:#fcefef;
+        margin-left: -10px;
+        border-radius: 40px;
+        padding-top: -40px;
+    }
+
+    .sidebar-card-cont{
+        width:100%;
+        height:7%;
+        /* background-color: #d83939; */
+        /* border: 2px solid red; */
+        color:black;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .sidebar-card-cont:hover{
+        width:100%;
+        height:7%;
+        color: #3F8DFA;
+        
+    }
+
+    .ariseLogo-container{
+    width:100%;
+    height:10vh;
+    /* display: grid;
+    place-content: center; */
+    background-color: #ffffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ariseLogo-div{
+    width:60%;
+    height:10vh;
+    background-color: #ffffff;
+    display: none;
+}
+}
+
+@media ( min-width:480px ) and ( max-width:768px )
+{ 
+    .sidebar-container{
+        height:100vh;
+        width:50vw;
+        background-color:#fcefef;
+        margin-left: -10px;
+        border-radius: 40px;
+        padding-top: -40px;
+    }
+
+    .sidebar-card-cont{
+        width:100%;
+        height:7%;
+        /* background-color: #d83939; */
+        /* border: 2px solid red; */
+        color:black;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .sidebar-card-cont:hover{
+        width:100%;
+        height:7%;
+        color: #3F8DFA;
+        
+    }
+
+    .ariseLogo-container{
+    width:100%;
+    height:10vh;
+    /* display: grid;
+    place-content: center; */
+    background-color: #ffffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ariseLogo-div{
+    width:60%;
+    height:10vh;
+    background-color: #ffffff;
+    display: none;
+}
+}
+
+@media (max-width : 480px){
+    .sidebar-container{
+        height:100vh;
+        width:70vw;
+        background-color:#fcefef;
+        margin-left: -10px;
+        border-radius: 40px;
+        padding-top: -40px;
+    }
+
+    .sidebar-card-cont{
+        width:100%;
+        height:7%;
+        /* background-color: #d83939; */
+        /* border: 2px solid red; */
+        color:black;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .sidebar-card-cont:hover{
+        width:100%;
+        height:7%;
+        color: #3F8DFA;
+        
+    }
+
+    .ariseLogo-container{
+    width:100%;
+    height:10vh;
+    /* display: grid;
+    place-content: center; */
+    background-color: #ffffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ariseLogo-div{
+    width:60%;
+    height:10vh;
+    background-color: #ffffff;
+    display: none;
+}
+
+}
+ 
