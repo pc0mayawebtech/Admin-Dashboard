@@ -10,7 +10,8 @@ const TransactionAndNotification = () => {
   return (
     <div className='TransactionAndNotification-container'>
       <Transaction />
-      <Notification />
+      <Transaction />
+      {/* <Notification /> */}
     </div>
   )
 }

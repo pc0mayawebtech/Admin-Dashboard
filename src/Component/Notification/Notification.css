@@ -1,4 +1,4 @@
-.notification-container{
+/* .notification-container{
     height: 80%;
     width:48%;
     background-color: #ffffff;
@@ -12,4 +12,84 @@
         width:100%;
 
     }
+} */
+
+.tran-text{
+    font-size: 1.3rem;
+    padding:1rem;
 }
+
+/* .transaction-element1{
+      overflow-y:auto;
+      height: 90%;
+      width:100%;
+      background-color:#ffffff;
+      border-radius: 10px;
+      overflow: auto;
+      z-index: 1;
+} */
+
+.transaction-element{
+   width:94%;
+   height:70px;
+   /* background-color: rgb(197, 179, 179); */
+   margin:10px;
+   border-radius: 4px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.left-cont{
+    display:flex;
+}
+
+.card-order-cont{
+    height: 70px;
+    width:200px;
+    margin-top: 10px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+}
+.card2{
+  /* padding: 4px; */
+  padding-top: 4px;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.order2{
+
+}
+
+.amount{
+    padding:1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.icon1{
+  height: 60px;
+  width:60px;
+  border-radius: 10px;
+  /* background-color: blue; */
+  display: grid;
+  place-items: center;
+  margin:10px;
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px)
+{
+    .transaction-container{
+        height: 48%; 
+        width:100%;
+        margin-top: 70px;
+        /* background-color: aqua; */
+
+    }
+}
+
+
