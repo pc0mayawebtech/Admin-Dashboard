@@ -8,10 +8,16 @@ import { MdNotificationsActive } from "react-icons/md";
 import { IoMenuOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5"
 import { useState } from 'react';
+import {signOut} from 'firebase/auth'
+import {useNavigate} from 'react-router-dom'
+import {getAuth} from 'firebase/auth'
 
 const Header = () => {
     const[showMenu, setShowMenu] = useState(true);
     const[showSidebar, setShowSidebar] = useState(false);
+    const[showProfileOption,setShowProfileOption] = useState(false)
+    const navigate = useNavigate();
+    const auth = getAuth();
 
     const navbarHandler = ()=>{
         setShowSidebar(!showSidebar)
@@ -28,8 +34,21 @@ const Header = () => {
             }
     }
     window.addEventListener('resize',menuHandler)
-
+    
     const menuStyle = !showMenu?{width:'100vw'}:{}
+
+    const handleLogoClick = () =>{
+      setShowProfileOption(!showProfileOption)
+    }
+
+    const handleLogOut = ()=>{
+            signOut(auth)
+            try {
+              navigate('/')
+            } catch (error) {
+              
+            }
+    }
 
   return (
     <div className='navbar-main-container'>
@@ -62,7 +81,14 @@ const Header = () => {
             </div>
         </div>
         <div className='name'>Umang</div>
-        <div> <img className='user-photo' src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=Ql6UUNosrWAY0w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-user-icon-icons-logos-emojis-users-2400.png&ehk=8agkVrs8bo9zafVF9Qk4%2bFqv5IwaEZrb8DwX%2ftfJtNc%3d&risl=&pid=ImgRaw&r=0" alt='img-logo' /></div>
+        <div> <img className='user-photo' src="https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=Ql6UUNosrWAY0w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-user-icon-icons-logos-emojis-users-2400.png&ehk=8agkVrs8bo9zafVF9Qk4%2bFqv5IwaEZrb8DwX%2ftfJtNc%3d&risl=&pid=ImgRaw&r=0" alt='img-logo' onClick={handleLogoClick} /></div>
+        {
+          showProfileOption && <div className='user-profile-container'>
+          <div>Profile</div>
+          <div>Settings</div>
+          <div onClick={handleLogOut}>Logout</div>
+        </div>
+        }
         </div>
         </div>
       </div>

@@ -6,6 +6,8 @@ import Login from './Component/Login/Login'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
+import Login2 from './Component/Login2/Login2';
+import ForgotPassword from './Component/ForgotPassword/ForgotPassword';
 
 function App() {
   
@@ -15,6 +17,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/'  element={<Login />} />
+        <Route path='/forgot' element={ <ForgotPassword />} />
         <Route path='/dashboard' element={<><Header /> <ContentContainer /> </>} />
       </Routes>
     </Router>
