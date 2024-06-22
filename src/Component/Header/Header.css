@@ -14,6 +14,10 @@
     background-color: #F8F8FB;
     display:flex;
     justify-content: space-between;
+    position: fixed;
+        top:0;
+        left:16%;
+       
     
 }
 .home-logo-div{
@@ -161,8 +165,19 @@
     
 }
 
-@media (max-width : 1260px) and (min-width : 1177px)
-{
+@media (min-width : 1177px) and (max-width : 1260px)
+{ 
+    .header-container{
+        position: fixed;
+        top:0;
+        left:15%;
+        width:87vw;
+        height:14vh;
+        background-color: #F8F8FB;
+        display:flex;
+        justify-content: space-between;
+        
+    }
     .new-leads{
         display: none;
     }
@@ -177,6 +192,17 @@
 }
 
 @media ( width < 1181px ) {
+    .header-container{
+        position: fixed;
+        top:0;
+        left:15%;
+        width: 90vw;
+        height:14vh;
+        background-color: #F8F8FB;
+        display:flex;
+        justify-content: space-between;
+        
+    }
     .new-leads{
         display: none;
     }
@@ -190,7 +216,18 @@
 }
 
 @media ( min-width:481px ) and ( max-width:780px )
-{ 
+{  
+    .header-container{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        height:14vh;
+        background-color: #F8F8FB;
+        display:flex;
+        justify-content: space-between;
+        
+    }
     .menu-option{
         position:fixed;
     }
@@ -243,6 +280,19 @@
 
 @media (width <= 480px)
 {
+
+    .header-container{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        height:14vh;
+        background-color: #F8F8FB;
+        display:flex;
+        justify-content: space-between;
+        
+    }
+
     .home-text-common{
         display: none;
        }

@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
 import Login2 from './Component/Login2/Login2';
 import ForgotPassword from './Component/ForgotPassword/ForgotPassword';
+import AccessDenied from './Component/AccessDenied/AccessDenied';
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/'  element={<Login />} />
         <Route path='/forgot' element={ <ForgotPassword />} />
+        <Route path='/access-denied' element={ <AccessDenied />} />
         <Route path='/dashboard' element={<><Header /> <ContentContainer /> </>} />
       </Routes>
     </Router>

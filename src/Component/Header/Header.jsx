@@ -17,7 +17,7 @@ const Header = () => {
     const[showSidebar, setShowSidebar] = useState(false);
     const[showProfileOption,setShowProfileOption] = useState(false)
     const navigate = useNavigate();
-    const auth = getAuth();
+    const auth = getAuth(); 
 
     const navbarHandler = ()=>{
         setShowSidebar(!showSidebar)
